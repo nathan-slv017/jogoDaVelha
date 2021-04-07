@@ -14,7 +14,7 @@ function handleClick(event){
    if(handleMove(postion)){
        setTimeout(() => {
            alert("Acabou o jogo!!!")
-       }, 10);
+       }, 10)
    }
     updateSquares();
 }
