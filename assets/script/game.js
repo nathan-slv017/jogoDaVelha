@@ -15,11 +15,7 @@ function handleMove(position) {
         gameOver = isWin();
 
         if (!gameOver) {
-            if (playerTime == 0) {
-                playerTime = 1;
-            } else {
-                playerTime = 0
-            }
+           playerTime =(playerTime == 0) ? 1 : 0;
         }
     }
     return gameOver
@@ -49,4 +45,12 @@ function isWin() {
             return true
         }
     } return false
+}
+function restartGame(){
+    board = ['', '', '', '', '', '', '', '', ''];
+    playerTime = 0;
+    gameOver = false
+    
+
+
 }
